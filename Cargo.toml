@@ -11,3 +11,6 @@ tokio = { version =  "1.8", features = ["rt-multi-thread", "macros"] }
 dotenv = "0.15.0"
 rusqlite = "0.32.1"
 
+[[bin]]
+name = "telegram-bot-boshlangish"
+path = "src/main.rs"

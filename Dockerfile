@@ -19,4 +19,4 @@ COPY . .
 RUN cargo build --release
 
 # ENTRYPOINT - dastur qaysi komandadan boshlanishi kerak
-ENTRYPOINT ["./target/release/telegram-bot-boshlangish"]
+ENTRYPOINT ["./target/release/teloxide-telegram-bot-template"]

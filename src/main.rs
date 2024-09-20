@@ -5,9 +5,7 @@ mod dispatcher;
 mod data;
 
 use teloxide::prelude::*;
-use teloxide::types::MenuButton::Commands;
 use dispatcher::creat_schema;
-use crate::handlers::commands::{answer, Command};
 
 pub type Error = Box<dyn std::error::Error + Send + Sync>;
 
@@ -18,9 +16,6 @@ async fn main() -> Result<(), Error> {
 
     dotenv::dotenv().ok();
     let bot = Bot::from_env();
-    let bot2 = bot.clone();
-
-    Command::repl(bot2, answer);
 
     let schema = creat_schema();
 

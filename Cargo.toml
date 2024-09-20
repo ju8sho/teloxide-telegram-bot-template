@@ -1,5 +1,5 @@
 [package]
-name = "tg_bot"
+name = "teloxide_telegram_bot_template"
 version = "0.1.0"
 edition = "2021"
 
@@ -12,5 +12,5 @@ dotenv = "0.15.0"
 rusqlite = "0.32.1"
 
 [[bin]]
-name = "telegram-bot-boshlangish"
+name = "teloxide-telegram-bot-template"
 path = "src/main.rs"

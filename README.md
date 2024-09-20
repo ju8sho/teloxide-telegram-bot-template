@@ -80,7 +80,7 @@ Note: The `-d` flag runs the container in detached mode, allowing it to run in t
 ## Versioning
 Current version: `v1.2`
 
-For the versions available, see the [tags on this repository](https://github.com/ju8sho/teloxide-telegram-bot-template/tags).
+For the versions available, see the [repository tags](https://github.com/ju8sho/teloxide-telegram-bot-template/tags).
 
 
 ## Contributing

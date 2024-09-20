@@ -1315,7 +1315,7 @@ dependencies = [
 
 [[package]]
 name = "teloxide_telegram_bot_template"
-version = "0.1.0"
+version = "0.1.1"
 dependencies = [
  "dotenv",
  "log",

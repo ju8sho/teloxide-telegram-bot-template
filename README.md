@@ -24,7 +24,8 @@ This project provides a template for creating Telegram bots using Rust and the T
 
 1. Clone the repository:
    ```
-   git clone https://github.com/ju8sho/telegram-bot-boshlangish.git
+   git clone https://github.com/ju8sho/teloxide-telegram-bot-template
+.git
    ```
 2. Navigate to the project directory:
    ```

@@ -2,6 +2,7 @@
 
 ```markdown
 # Teloxide Telegram Bot Template
+**Versiya: 1.0.0**
 
 This project provides a template for creating Telegram bots using Rust and the Teloxide framework. It includes SQLite database integration, Docker support, and serves as a starting point for building custom Telegram bots.
 

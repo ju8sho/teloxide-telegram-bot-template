@@ -1,6 +1,6 @@
 
 
-```markdown
+
 # Teloxide Telegram Bot Template
 **Versiya: 1.1**
 
@@ -35,7 +35,7 @@ This project provides a template for creating Telegram bots using Rust and the T
 
 ### Running the Bot
 
-#### Without Docker
+### Without Docker
 
 1. Set up your Telegram Bot Token:
    ```
@@ -46,7 +46,7 @@ This project provides a template for creating Telegram bots using Rust and the T
    cargo run
    ```
 
-#### With Docker
+### With Docker
 
 1. Build the Docker image:
    ```
@@ -104,4 +104,4 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 ## Disclaimer
 
 This is a template project and may require modifications to suit specific bot requirements.
-```
+

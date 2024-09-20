@@ -83,14 +83,8 @@ Note: The `-d` flag runs the container in detached mode, allowing it to run in t
 
 ## Versioning
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/yourusername/telegram-bot-boshlangish/tags).
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/ju8sho/teloxide-telegram-bot-template/tags).
 
-## Updates
-
-To stay informed about the latest updates:
-- Watch this repository on GitHub
-- Check the [CHANGELOG.md](CHANGELOG.md) file for recent changes
-- Follow the project's releases page
 
 ## Contributing
 

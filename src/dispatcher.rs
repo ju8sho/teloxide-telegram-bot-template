@@ -3,7 +3,7 @@ use teloxide::dptree;
 use teloxide::prelude::Update;
 use teloxide::prelude::*;
 use crate::handlers::commands::{process_command, Command};
-use crate::handlers::blaclists::process_text_message;
+use crate::handlers::other_text_messega::process_text_message;
 
 pub fn creat_schema() -> UpdateHandler<Box<dyn std::error::Error + Send + Sync>> {
     Update::filter_message()

@@ -1320,6 +1320,7 @@ dependencies = [
  "dotenv",
  "log",
  "pretty_env_logger",
+ "regex",
  "rusqlite",
  "teloxide",
  "tokio",

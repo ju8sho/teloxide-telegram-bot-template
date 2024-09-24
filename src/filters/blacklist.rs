@@ -1,7 +1,7 @@
 pub fn is_blaclist(text: &str) -> bool {
     let blacklist = vec![
         "sotiladi", "kilo", "narx", "so'm", "tel", "telefon",
-         "un", "kepek", "kunjara", "velik", "$"
+         "un", "kepek","kepak", "kunjara", "velik", "$"
     ];
 
     for matn in &blacklist {

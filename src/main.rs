@@ -3,6 +3,7 @@ mod models;
 mod dispatcher;
 mod data;
 mod filters;
+mod keyboards;
 
 use teloxide::prelude::*;
 use dispatcher::creat_schema;

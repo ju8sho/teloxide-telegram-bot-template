@@ -1,8 +1,8 @@
 mod handlers;
 mod models;
-mod keyboards;
 mod dispatcher;
 mod data;
+mod filters;
 
 use teloxide::prelude::*;
 use dispatcher::creat_schema;

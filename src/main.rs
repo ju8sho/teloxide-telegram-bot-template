@@ -3,7 +3,9 @@ mod models;
 mod keyboards;
 mod dispatcher;
 mod data;
+mod filters;
 
+use log::{debug, error};
 use teloxide::prelude::*;
 use dispatcher::creat_schema;
 
@@ -11,10 +13,11 @@ pub type Error = Box<dyn std::error::Error + Send + Sync>;
 
 #[tokio::main]
 async fn main() -> Result<(), Error> {
-    pretty_env_logger::init();
-    log::info!("Starting throw dice bot...");
+    dotenv::dotenv().expect("token uqishda xatolik");
 
-    dotenv::dotenv().ok();
+    pretty_env_logger::init();
+    log::info!("Bot ishga tushdi...");
+
     let bot = Bot::from_env();
 
     let schema = creat_schema();

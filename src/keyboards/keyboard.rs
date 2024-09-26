@@ -1,3 +1,4 @@
+use rusqlite::ffi::sqlite3_callback;
 use teloxide::types::{KeyboardButton, KeyboardMarkup};
 
 pub fn main_keyboard() -> KeyboardMarkup {

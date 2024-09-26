@@ -1,11 +1,11 @@
+use crate::handlers::commands::{process_command, Command};
+use crate::handlers::start_help::process_text_message;
 use teloxide::dispatching::{HandlerExt, UpdateFilterExt, UpdateHandler};
 use teloxide::dptree;
 use teloxide::prelude::Update;
 use teloxide::prelude::*;
-use crate::handlers::commands::{process_command, Command};
-use crate::handlers::start_help::process_text_message;
 
-pub fn creat_schema() -> UpdateHandler<Box<dyn std::error::Error + Send + Sync>> {
+pub fn creat_schema() -> UpdateHandler<Box<dyn std::error::Error + Send + Sync>>{
     Update::filter_message()
         .filter_map(|update: Update| update.from().cloned())
 
@@ -16,6 +16,7 @@ pub fn creat_schema() -> UpdateHandler<Box<dyn std::error::Error + Send + Sync>>
         )
 
         .branch( //filter for all message text return
-            Message::filter_text().endpoint(process_text_message)
+             Message::filter_text().endpoint(process_text_message)
         )
 }
+

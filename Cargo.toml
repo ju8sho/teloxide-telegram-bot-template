@@ -14,3 +14,7 @@ rusqlite = "0.32.1"
 [[bin]]
 name = "teloxide-telegram-bot-template"
 path = "src/main.rs"
+
+
+[env]
+RUST_LOG = "debug, info, error"

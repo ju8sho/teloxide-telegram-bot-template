@@ -1,1 +1,1 @@
-pub(crate) mod model;
+pub(crate) mod asosiy_models;

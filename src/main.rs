@@ -1,29 +1,19 @@
+mod commander;
+mod loader;
+mod config;
 mod handlers;
 mod models;
 mod keyboards;
-mod dispatcher;
-mod data;
-mod filters;
 
-use log::{debug, error};
-use teloxide::prelude::*;
-use dispatcher::creat_schema;
-
-pub type Error = Box<dyn std::error::Error + Send + Sync>;
+use log::debug;
+use crate::loader::run;
 
 #[tokio::main]
-async fn main() -> Result<(), Error> {
-    dotenv::dotenv().expect("token uqishda xatolik");
-
+async fn main() {
+    dotenv::dotenv().ok();
     pretty_env_logger::init();
-    log::info!("Bot ishga tushdi...");
+    log::info!("Bot ishlamoqda...");
 
-    let bot = Bot::from_env();
-
-    let schema = creat_schema();
-
-    Dispatcher::builder(bot, schema).build().dispatch().await;
-    Ok(())
+    run().await.expect("TODO: panic message");
 }
-
 
